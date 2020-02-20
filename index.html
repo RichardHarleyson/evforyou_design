@@ -1,0 +1,289 @@
+<!-- <!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body> -->
+
+<!--      Header_block-->
+
+{% extends 'basic.html' %}
+
+{% block head %}
+<title>
+  {% block title %}
+    EVFORYOU - Электромобили
+  {% endblock %}
+</title>
+<meta name="description" content="Evforyou — электромобили премиум класса, запчасти для электрокаров, автомобильные аукционы США">
+{% endblock %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="header_block" style="">
+      <img src="{% static "img/logo_new.png" %}" class="logo_new" alt="">
+      <div class="header_menu">
+        <div class="menu_item">
+          <a href="#" class="fancy_link font_pfespm red_text"><span class="">ГЛАВНАЯ</span></a>
+        </div>
+        <div class="menu_item">
+          <a href="#newcommers_block" class="fancy_link font_pfespm"><span class="">НАЛИЧИЕ</span></a>
+        </div>
+        <div class="menu_item">
+          <a href="#contacts_info" class="fancy_link font_pfespm"><span class="">КОНТАКТЫ</span></a>
+        </div>
+      </div>
+      <div class="center_items text-center">
+        <span class="font_pfespb text-white header">ЗА РУЛЕМ <span class="red_text">БУДУЩЕГО</span></span>
+        <p class="text-white font_myriadpro">Новые автомобили - Новое мышление - Новые возможности</p>
+        <button class="header_button" onClick="document.getElementById('wannabe_first').scrollIntoView();"><span class="font_myriadpro">Хочу узнать подробнее</span></button>
+      </div>
+    </div>
+
+<!--      Wannabe_first-->
+
+      <div class="wannabe_first light_grey" id="wannabe_first">
+          <div class="wannabe_first_header text-center">
+            <h3 class="font_pfespl">ХОЧЕШЬ БЫТЬ <SPAN class="light_red">ПЕРВЫМ</SPAN></h3>
+              <div class="mx-auto">
+                <p class="font_pfespl">
+                    Мы не продаем "красивые картинки" - у нас вы можете "вживую" познакомиться со всем модельным рядом электромобилей, а также совершить тест-драйв
+                </p>
+              </div>
+          </div>
+          <div class="wannabe_first_testdrive text-center">
+            <span class="font_pfespl" style="font-size: 24px; line-height: 1">ВЫБЕРИ АВТО ДЛЯ</span>
+            <span class="br"></span>
+            <span class="light_red font_pfespm" style="font-size:36px; line-height: 1">ТЕСТ ДРАЙВА</span>
+              <div class="my-5">
+                <div class="row mb-3 mx-0 px-0">
+                    <div class="col"></div>
+                    <div class="col"><img class="img-fluid" src="{% static "img/tesla3black_small.png" %}" style="opacity: 0.7"></div>
+                    <div class="col"><img class="img-fluid" src="{% static "img/tesla3black_small.png" %}" style="opacity: 0.7"></div>
+                    <div class="col"><img class="img-fluid" src="{% static "img/tesla3black_small.png" %}" style="opacity: 0.7"></div>
+                    <div class="col"><img class="img-fluid" src="{% static "img/teslaxred_small.png" %}"></div>
+                    <div class="col"></div>
+                </div>
+                  <div class="row mx-0 px-0">
+                    <div class="col-2"></div>
+                      <div class="col-4"><img class="img-fluid" src="{% static "img/teslaxred.png" %}"></div>
+                      <div class="col-4 text-left">
+                        <span class="font_pfespl text-uppercase" style="font-size: 25px;">Tesla Model 3 2018</span>
+                                                    <br>
+                        <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Класс: <span class="light_red">Внедорожник / Кроссовер</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Пробег: <span class="light_red">6 тыс. км</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Двигатель: <span class="light_red">Электро (518 л.с. / 525 кВт) </span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Привод: <span class="light_red">Полный (4WD)</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Разгон до 100км: <span class="light_red">5 с.</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Максимальная скорость: <span class="light_red">250 км/ч</span></span>
+                                                    <br>
+                          <button class="test_drive_detail mt-3 font_pfespl">Подробнее</button>
+                      </div>
+                    <div class="col-2"></div>
+                  </div>
+                  <div class="testdrive_veh_test my-4 mx-auto font_pfespl" style="font-size: 19px">
+                        Model X является самым безопасным, быстрым и наиболее продвинутым SUV (Sport Utility Vehicle) в истории. С полным приводом и 100 кВт/ч батареей, обеспечивающей 565 км пробега, Model X имеет широкие сидения для семи взрослых и их багажа. Model X разработан с безопасностью в качестве главного приоритета.
+                        Напольный монтаж батареи понижает центр тяжести, так что риск опрокидывания в два раза ниже, чем у любого другого автомобиля в этом классе.
+                  </div>
+                  <div class="my-4">
+                    <button class="goto_catalogue1">Перейти в каталог</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+<!--      Cons-->
+      <div class="cons_block light_grey">
+          <div class="cons_block_header mx-auto  text-center">
+               <span class="font_pfespm" style="font-size: 26px;">НАШИ <span class="light_red">ПРЕИМУЩЕСТВА</span></span>
+          </div>
+
+          <div class="cons_block_texts">
+            <div class="row mx-0 px-0">
+                <div class="col px-0 mx-0">
+                    <div style="">
+                    <div style="margin-left: 20%;">
+                        <span class="text-uppercase font_pfespm" style="font-size: 22px;">Мы <span class="light_red">знаем</span> об электромобилях - все!</span>
+                        <br>
+                            <ul>
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">Отслеживаем все новости по данной тематике.</span>
+                                </li>
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">Посещаем презентации новых моделей, семинары и сервисные центры. </span>
+                                </li>
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">Находимся в контакте, общаемся, обмениваемся опытом с зарубежными клубами любителей электромобилей и рядовыми владельцами по всему миру.</span>
+                                </li>
+                            </ul>
+                    </div>
+                    </div>
+                    <div class="cons_fancy_line"></div>
+                </div>
+                <div class="col cons_block_img1">
+                    <img class="test_img_polygon img-fluid" style="" src="{% static "img/cons_block3.jpg" %}">
+                </div>
+            </div>
+          </div>
+      </div>
+
+<!--      Newcommers-->
+      <div class="newcommers_block light_grey" id="newcommers_block">
+        <div class="newcommers_header text-center mx-auto">
+            <span class="font_pfespm text-uppercase" style="font-size: 26px;">актуальные <span class="light_red">поступления</span></span>
+        </div>
+          <div class="row my-5 mx-0 px-0">
+            <div class="col-2"></div>
+              <div class="col-4"><img class="img-fluid" src="{% static "img/incommer_1.jpg" %}"></div>
+              <div class="col-4">
+                  <div class="incommer_text_head text-uppercase font_pfespl" style="font-size: 20px;">TESLA MODEL X 100D 2018</div>
+                  <p class="font_pfespl pt-4" style="font-size: 19px;">
+                    Пригнан из США. Первая регистрация!
+Пробег 6 тыс. км, полный привод, цвет красный металлик, есть все, состояние нового автомобиля.  Гаражное  хранение, первый  владелец
+                  </p>
+                  <p class="font_pfespl" style="font-size: 19px;">Цена: <span class="light_red">87 000 $</span></p>
+                  <button class="incomming_details font_pfespl">Подробнее</button>
+              </div>
+            <div class="col-2"></div>
+          </div>
+      </div>
+
+<!--      Service-->
+      <div class="service_block light_grey">
+        <div class="service_block_header text-center mx-auto">
+            <span class="text-uppercase font_pfespm" style="font-size: 26px;"><span class="light_red">сервисное</span> обслуживание</span>
+        </div>
+        <div class="row mx-0 px-0 my-4">
+            <div class="col-1"></div>
+                <div class="col-5 py-5 px-0">
+                    <p class="font_pfespl" style="font-size: 19px;">
+                    Мы решаем любые вопросы связанные с обслуживанием электромобилей!
+                    </p>
+                    <p class="font_pfespl" style="font-size: 19px;">
+                    Формат обслуживания и ремонта существенно отличается от процедур с обычными автомобилями.
+                    </p>
+                    <p class="font_pfespl" style="font-size: 19px;">
+                    Концепция ремонта такого типа авто предусматривает упрощение многих процедур. Зачастую эти операции специалисты могут сделать дистанционно.
+                    </p>
+                    <p class="font_pfespl" style="font-size: 19px;">
+                    Так же Вы можете заказать необходимые запчасти для Вашего электромобиля у нас
+                    </p>
+                    <div class="text-center">
+                        <button class="service_block_details font_pfespl mx-auto">Подробнее</button>
+                    </div>
+                </div>
+                <div class="col-5 px-0 mx-0"><img class="img-fluid" src="{% static "img/service_photo.jpg" %}"></div>
+            <div class="col-1"></div>
+        </div>
+      </div>
+
+<!--    Contacts form block-->
+    <div class="contacts_form_block">
+          <div class="contacts_form_header text-center mx-auto">
+              <span class="text-uppercase font_pfespm" style="font-size: 26px;">Остались <span class="light_red">вопросы?</span></span>
+          </div>
+        <form class="my-4" id="main_contact_form">
+            <div class="row mx-0 px-0">
+                <div class="col-1"></div>
+                <div class="col-3">
+                    <input class="main_form_input" type="text" name="firstname" placeholder="Имя">
+                    <input class="main_form_input" type="text" name="phone" required placeholder="Телефон">
+                    <div style="position: relative; margin-top: 20px;">
+                        <button class="main_form_send">Отправить</button>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <input class="main_form_input" type="text" name="secondname" placeholder="Фамилия">
+                    <input class="main_form_input" type="text" name="email" placeholder="Почта">
+                </div>
+                <div class="col-4">
+                    <textarea class="main_form_input" rows="8" name="firstname" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </form>
+    </div>
+
+<!--      contacts info block-->
+
+      <div class="contacts_info_block light_grey" id="contacts_info">
+        <div class="row mx-0 px-0">
+            <div class="col-1"></div>
+                <div class="col-5">
+                    <img class="img-fluid" style="filter: brightness(1.4) contrast(1.1)" src="{% static "img/tesla_car_map.png" %}">
+                </div>
+                <div class="col-5">
+                    <div class="font_pfespl pl-5" style="font-size: 19px">
+                        <p>
+                            <span style="line-height: 1;">+38 (067) 821 77 77</span>
+                            
+                        </p>
+                        <p>
+                            <span>evforyou.com@gmail.com</span>
+                        </p>
+                        <p>
+                            <span style="line-height: 1;">Запорожское ш., 59, Днипро, </span>
+                            <br>
+                            <span style="line-height: 1;">Днепропетровская область </span>
+                        </p>
+                        <p>
+                            <i class="fab fa-facebook-square d-inline light_grey" style="font-size: 30px;"></i>
+                            <i class="fab fa-instagram d-inline light_grey" style="font-size: 30px;"></i>
+                        </p>
+                    </div>
+                </div>
+            <div class="col-1"></div>
+        </div>
+      </div>
+
+<!--      map-->
+      <div class="map_block">
+        <img class="img-fluid" style="margin-top: -60px;" src="{% static "img/map.png" %}">
+      </div>
+
+
+      <div class="footer">
+          <div class="footer_card">
+            <div class="pt-3 px-4 font_pfespl light_grey">
+                <img class="img-fluid" src="{% static "img/logo_new_dark.png" %}">
+                <p class="pt-3 my-0" style="font-size: 14px;">
+                    “Мы осуществляем продажу электромобилей в наличии и под заказ как новых, так и бывших в употреблении.”
+                </p>
+                <p class="my-0">
+<!--                    <i class="fas fa-calendar-alt"></i>-->
+                    <i class="fas fa-calendar-alt d-inline pr-2 light_red" style="font-size: 40px"></i>
+                    <span style="font-size: 16px; text-align: middle">Режим работы</span>
+                </p>
+                <p class="my-0">
+                    <span style="font-size: 19px; line-height: 1;"><span class="light_red">пн-пт </span> 8:00 - 18:00</span>
+                    <br>
+                    <span style="font-size: 19px; line-height: 1;"><span class="light_red">сб-вс </span> 9:00 - 16:00</span>
+                </p>
+                <p class="my-0">
+                    <span class="light_red" style="font-size: 15px">без перерыва и выходных</span>
+                </p>
+            </div>
+          </div>
+        <span class="font_pfespm text-white" style="font-size: 12px; position: relative; top: 90%; left: 60%;">© 2020 EVforyou. All Rights Reserved. Developed by </span>
+      </div>
+
+{% endblock %}
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </body>
+</html> -->

@@ -1,0 +1,487 @@
+html, body{
+  height: 100%;
+  font-family: 'Istok Web', sans-serif !important;
+  color: #2c2f33;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Ubuntu', sans-serif !important;
+  color: #2c2f33;
+  /* color: white !important; */
+}
+
+a,
+button, label {
+		/* font-family: 'Montserrat' !important; */
+    font-family: 'Istok Web', sans-serif !important;
+		transition: background .3s ease-in-out;
+		outline: none!important;
+    /* color: #2c2f33; */
+}
+
+.fs-17{
+  font-size: 17px !important;
+}
+
+footer{
+  height: 120px;
+}
+
+.header{
+  height: 100vh;
+  width: auto;
+  /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080'); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.header_instock{
+  background-color:	#2c2f33;
+  /* color: #2c2f33; */
+
+}
+
+.header_border{
+  border-bottom: 3px solid #F4C23D;
+}
+
+.nav .menu-bar{
+  width: 100%;
+  text-align: center;
+  padding-left: 0;
+}
+
+.nav .menu-bar li a:hover {
+  cursor: pointer;
+  color: #F4C23D !important;
+  /* color: #F4C23D !important; */
+}
+
+.nav .menu-bar li img{
+  cursor: pointer;
+}
+
+.nav .menu-bar li a {
+  text-decoration: none;
+}
+
+.menu-bar li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.menu_item_letters{
+   letter-spacing: 3px !important;
+   font-weight: bold !important;
+}
+
+.logo_size{
+  width: 200px;
+}
+
+.discord_grey_bg{
+  background-color: #2c2f33;
+}
+
+.text-red{
+  /* color: #d62d20 !important; */
+  color: #BB133E !important;
+}
+
+.text-yellow{
+  /* color: #F4C23D !important; */
+  color: #FFB609 !important;
+}
+
+.text-white{
+  color: white !important;
+}
+
+.text-blue{
+  /* color: #0000FF !important; */
+  color: #2959AD !important;
+}
+
+.discord_blue{
+  color: #7289da;
+}
+
+.discord_grey{
+  color: #2c2f33;
+}
+
+.telegram_color{
+  color: #2FA4DE !important;
+}
+
+.icon_font_size{
+  font-size: 25px;
+}
+
+.card_title_font{
+  font-size: 1.6rem;
+}
+
+.tesla-wire-button-white:hover {
+		color: #000000!important;
+		background-color: #FFFFFF;
+}
+
+.btn-rd {
+		border-radius: 40px;
+}
+
+.btn-d,
+.btn-d:hover,
+.btn-d:focus {
+		color: #FFF;
+		background: rgba(0, 0, 0, .3);
+}
+
+.contact_container{
+  bottom: 10%;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.7)!important;
+}
+
+.card-body > p{
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.carfax-btn{
+  background-color: #FFB609;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: -20px;
+  margin-bottom: 0.5rem;
+}
+
+.car-info_block{
+  list-style: none;
+}
+
+.car-info_block > li{
+  width: 23% !important;
+}
+
+.car-info_block > li >  div{
+  padding-top: 5px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+
+.car-info-block-hover:hover{
+  background-color: #FFB609 !important;
+}
+
+.card-shadow{
+  border-bottom: 3px solid transparent;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+}
+
+.card:hover{
+  border-bottom: 3px solid #2959AD;
+}
+
+.tesla-wire-button-black {
+		/* font-family: "Montserrat"; */
+    font-family: 'Istok Web', sans-serif !important;
+		font-weight: 700;
+		font-size: 15px;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		line-height: 21px;
+		border-color: #2c2f33!important;
+		background-color: transparent;
+		padding-right: 28px;
+		padding-left: 28px;
+		color: #2c2f33!important;
+		border-radius: 28px 28px 28px 28px;
+		border-width: 3px 3px 3px 3px;
+}
+
+.tesla-wire-button-black:hover {
+		color: #FEFFFF!important;
+		background-color: #2c2f33;
+}
+.tesla-wire-button-white {
+		/* font-family: "Montserrat"; */
+    font-family: 'Istok Web', sans-serif !important;
+		font-weight: 700;
+		font-size: 15px;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		line-height: 21px;
+		border-color: #FFFFFF!important;
+		background-color: transparent;
+		padding-right: 28px;
+		padding-left: 28px;
+		color: #FFFFFF!important;
+		border-radius: 28px 28px 28px 28px;
+		border-width: 3px 3px 3px 3px;
+}
+
+
+/* //////////// */
+.content {
+  height: 80px;
+  position: relative;
+  border-bottom: 2px solid;
+}
+
+.divider_header {
+  height: 150px;
+  z-index: 0;
+  position: relative;
+  border-bottom: 2px solid;
+  z-index: 1;
+}
+
+.circle-border {
+  width: 60px;
+  height: 62px;
+  border-radius: 50%;
+  bottom: -32px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border: 2px solid;
+  z-index: 0;
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  background: #2959AD;
+  border-radius: 50%;
+  bottom: -30px;;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  z-index: 2;
+}
+
+.footer {
+  height: 150px;
+}
+
+.icon_divider{
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+.no-style-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.models_collapse{
+  width: 270px;
+  display: inline-block;
+  float: left;
+}
+
+.specify_buttons{
+    font-family: 'Istok Web', sans-serif !important;
+		font-weight: 700;
+		font-size: 15px;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		line-height: 21px;
+		border-color: #2959AD;
+		/* background-color: transparent; */
+    background-color: #2959AD;
+		padding-right: 20px;
+		padding-left: 20px;
+		color: white;
+		border-radius: 28px 28px 28px 28px;
+		border-width: 3px 3px 3px 3px;
+}
+
+.specify_buttons:hover{
+  color: #2c2f33;
+  background-color: #FFB609;
+  border-color: #FFB609;
+}
+
+/* Подчеркивание ссылок */
+.fancy_link {
+    display: inline-block;
+    /* color:#ffeb3b; */
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+}
+.fancy_link:after {
+    /* background-color: #F4C23D; */
+    color: #FFB609 !important;
+    background-color: #FFB609;
+    /* background-color: #F4C23D; */
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.fancy_link:hover:after,
+.fancy_link:focus:after {
+    width: 100%;
+}
+/* ========== */
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+  .w-sm-25 {
+    width: 25% !important;
+  }
+  .w-sm-50 {
+    width: 50% !important;
+  }
+  .w-sm-75 {
+    width: 75% !important;
+  }
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .w-sm-auto {
+    width: auto !important;
+  }
+  .h-sm-25 {
+    height: 25% !important;
+  }
+  .h-sm-50 {
+    height: 50% !important;
+  }
+  .h-sm-75 {
+    height: 75% !important;
+  }
+  .h-sm-100 {
+    height: 100% !important;
+  }
+  .h-sm-auto {
+    height: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-25 {
+    width: 25% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-100 {
+    width: 100% !important;
+  }
+  .w-md-auto {
+    width: auto !important;
+  }
+  .h-md-25 {
+    height: 25% !important;
+  }
+  .h-md-50 {
+    height: 50% !important;
+  }
+  .h-md-75 {
+    height: 75% !important;
+  }
+  .h-md-100 {
+    height: 100% !important;
+  }
+  .h-md-auto {
+    height: auto !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-lg-25 {
+    width: 25% !important;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
+  .w-lg-auto {
+    width: auto !important;
+  }
+  .h-lg-25 {
+    height: 25% !important;
+  }
+  .h-lg-50 {
+    height: 50% !important;
+  }
+  .h-lg-75 {
+    height: 75% !important;
+  }
+  .h-lg-100 {
+    height: 100% !important;
+  }
+  .h-lg-auto {
+    height: auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .w-xl-25 {
+    width: 25% !important;
+  }
+  .w-xl-50 {
+    width: 50% !important;
+  }
+  .w-xl-75 {
+    width: 75% !important;
+  }
+  .w-xl-100 {
+    width: 100% !important;
+  }
+  .w-xl-auto {
+    width: auto !important;
+  }
+  .h-xl-25 {
+    height: 25% !important;
+  }
+  .h-xl-50 {
+    height: 50% !important;
+  }
+  .h-xl-75 {
+    height: 75% !important;
+  }
+  .h-xl-100 {
+    height: 100% !important;
+  }
+  .h-xl-auto {
+    height: auto !important;
+  }
+}
