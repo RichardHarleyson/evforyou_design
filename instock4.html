@@ -1,0 +1,250 @@
+{% extends 'instock_basic.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+<!--/////////////////////////-->
+<div class="text-center mb-4">
+    <span class="font_pfespm font-size-26 light_grey text-uppercase">Tesla Model S P100D 2019</span>
+</div>
+
+<div class="container light_grey">
+    <div class="row mx-0 px-0">
+        <div class="col-6 mx-0 px-0 text-center">
+            <div class="instock_images_wrapper">
+                <img class="img-fluid mb-3 instock_images" data-img_id="1" src="{% static "img/teslas2019white1.png" %}" alt="veh_img1">
+                <img class="img-fluid mb-3 instock_images" data-img_id="2" src="{% static "img/teslas2019white2.png" %}" alt="veh_img2">
+                <img class="img-fluid mb-3 instock_images" data-img_id="3" src="{% static "img/teslas2019white3.png" %}" alt="veh_img3">
+            </div>
+            <div class="row mx-0 px-0" style="height: 100px">
+                <div class="col-4 line-h100 text-right">
+                    <a class="cursor_pointer" onclick="instock_img_switcher('1')"><img class="img-fluid" src="{% static "img/teslas2019white1_small.png" %}"></a>
+                </div>
+                <div class="col-4 line-h100">
+                    <a class="cursor_pointer" onclick="instock_img_switcher('2')"><img class="img-fluid" src="{% static "img/teslas2019white2_small.png" %}"></a>
+                </div>
+                <div class="col-4 line-h100 text-left">
+                    <a class="cursor_pointer" onclick="instock_img_switcher('3')"><img class="img-fluid" src="{% static "img/teslas2019white3_small.png" %}"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <div><span class="font_pfespm font-size-26">Цена: <span class="light_red">97.000$</span></span></div>
+<!--            ------>
+            <div class="row">
+                <div class="col">
+                    <div class="row my-1">
+                        <div class="col-4 icon_pos_wrapper px-0 text-center">
+                            <img class="align-middle mx-auto" src="{% static "img/icon1.png" %}">
+                        </div>
+                        <div class="col-8 px-0">
+                            <span class="light_grey font-size-16 font_pfespl line_h81">Тип кузова</span>
+                            <br>
+                            <span class="light_red font-size-18 font_pfespm line_h81">Лифтбек</span>       
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row my-1">
+                        <div class="col-4 px-0 text-center">
+                            <img class="mx-auto" style="margin-top: -7px;" src="{% static "img/icon5.png" %}">
+                        </div>
+                        <div class="col-8 px-0">
+                            <span class="light_grey font-size-16 font_pfespl line_h81">КПП</span>
+                            <br>
+                            <span class="light_red font-size-18 font_pfespm line_h81">Автомат</span>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            ------>
+            <div class="row">
+                <div class="col">
+                    <div class="row my-1">
+                        <div class="col-4 icon_pos_wrapper px-0 text-center">
+                            <img class="align-middle mx-auto" src="{% static "img/icon2.png" %}">
+                        </div>
+                        <div class="col-8 px-0">
+                            <span class="light_grey font-size-16 font_pfespl line_h81">Тип привода</span>
+                            <br>
+                            <span class="light_red font-size-18 font_pfespm line_h81">Полный (4WD)</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row my-1">
+                        <div class="col-4 icon_pos_wrapper px-0 text-center">
+                            <img class="align-middle mx-auto" src="{% static "img/icon6.png" %}">
+                        </div>
+                        <div class="col-8 px-0">
+                            <span class="light_grey font-size-16 font_pfespl line_h81">Мощность</span>
+                            <br>
+                            <span class="light_red font-size-18 font_pfespm line_h81">785 л.с./585 кВт</span>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            ------>
+            <div class="row">
+                <div class="col">
+                    <div class="row my-1">
+                        <div class="col-4 icon_pos_wrapper px-0 text-center">
+                            <img class="align-middle" src="{% static "img/icon3.png" %}">
+                        </div>
+                        <div class="col-8 px-0">
+                            <span class="light_grey font-size-16 font_pfespl line_h81">Кол-во мест</span>
+                            <br>
+                            <span class="light_red font-size-18 font_pfespm line_h81">5 пассажиров</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row my-1">
+                        <div class="col-4 icon_pos_wrapper px-0 text-center">
+                            <img class="align-middle mx-auto" style="margin-top: -15px;" src="{% static "img/icon7.png" %}">
+                        </div>
+                        <div class="col-8 px-0">
+                            <span class="light_grey font-size-16 font_pfespl line_h81">Разгон до 100 км</span>
+                            <br>
+                            <span class="light_red font-size-18 font_pfespm line_h81">2,7 сек</span>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            ------>
+            <div class="row">
+                <div class="col">
+                    <div class="row my-1">
+                        <div class="col-4 icon_pos_wrapper px-0 text-center">
+                            <img class="align-middle mx-auto" style="margin-top: -15px;" src="{% static "img/icon4.png" %}">
+                        </div>
+                        <div class="col-8 px-0">
+                            <span class="light_grey font-size-18 font_pfespl line_h81">Макс. скорость</span>
+                            <br>
+                            <span class="light_red font-size-18 font_pfespm line_h81">265 км/ч</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row my-1">
+                        <div class="col-4 icon_pos_wrapper px-0 text-center">
+                            <img class="align-middle mx-auto" src="{% static "img/icon8.png" %}">
+                        </div>
+                        <div class="col-8 px-0">
+                            <span class="light_grey font-size-18 font_pfespl line_h81">Запас хода</span>
+                            <br>
+                            <span class="light_red font-size-18 font_pfespm line_h81">615 км</span>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            ------>
+            <div class="my-2 text-center font_pfespl">
+                <button class="d-inline test_drive_detail mr-3" style="width: 160px;">Заказать</button>
+                <button class="d-inline instock_testdrive ml-3" style="width: 160px;">Тест-драйв</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container light_grey  font_pfespl">
+    <div class="tab mt-5 font-size-19">
+      <button class="tablinks" onclick="openTab(event, 'Desc')">Описание</button>
+      <button class="tablinks" onclick="openTab(event, 'Params')">Характеристики</button>
+      <button class="tablinks" onclick="openTab(event, 'Comp')">Комплектация</button>
+<!--      <button class="tablinks" onclick="openTab(event, 'Photo')">Фотографии</button>-->
+    </div>
+
+    <!-- Tab content -->
+    <div class="tab_wrapper">
+        <div id="Desc" class="tabcontent font-size-19 my-5 active">
+        <p class="abzac">
+Model S спроектирована с нуля, чтобы быть самым безопасным и, в то же время, самым резвым седаном на дороге. C беспрецедентной производительностью двигателей, которая передаётся через уникальную, полностью электрическую трансмиссию Tesla, Model S разгоняется от 0 до 100 км/ч всего за 2,7 секунды. 
+        </p>
+        <p class="abzac">
+     Модель S поставляется со встроенной функцией автопилота, чтобы сделать ваше вождение более безопасным и менее утомительным.
+        </p>
+    </div>
+
+    <div id="Params" class="tabcontent font-size-19 my-5">
+        <div class="row">
+            <div class="col-5">
+                <ul class="cons_lists">
+                    <li class="my-1">Производитель: <span class="light_red">Tesla</span></li>
+                    <li class="my-1">Модель авто:  <span class="light_red">MODEL S</span></li>
+                    <li class="my-1">Тип кузова:  <span class="light_red">Лифтбек</span></li>
+                    <li class="my-1">Год: <span class="light_red">2019</span></li>
+                    <li class="my-1">Местонахождение: <span class="light_red">Днепр</span></li>
+                    <li class="my-1">Цвет: <span class="light_red"> Белый металлик	</span></li>
+                    <li class="my-1">Тип топлива: <span class="light_red">Электро</span></li>
+                    <li class="my-1">Страна производства	: <span class="light_red">Америка</span></li>
+                </ul>
+            </div>
+            <div class="col-5">
+                <ul class="cons_lists">
+                    <li class="my-1">Пробег км: <span class="light_red">2.000 км. </span></li>
+                    <li class="my-1">Привод:<span class="light_red">Полный (4WD)</span></li>
+                    <li class="my-1">Коробка:<span class="light_red">Автомат</span></li>
+                    <li class="my-1">Максимальная скорость: <span class="light_red">265 км/ч</span></li>
+                    <li class="my-1">Мощьность двигателя:<span class="light_red"> 785 л.с./585 кВт</span></li>
+                    <li class="my-1">Разгон до 100 км/ч:<span class="light_red"> 2,7 сек.</span></li>
+                    <li class="my-1">Запас хода:<span class="light_red"> 615 км.</span></li>
+                    <li class="my-1">Состояние: <span class="light_red">Гаражное хранение, без ДТП</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="Comp" class="tabcontent font-size-19 my-5">
+        <div class="row my-4">
+            <div class="col-4">
+                <span class="light_red font-size-20 pl-3">Безопасность</span>
+                <br>
+                <ul class="cons_lists">
+                    <li class="my-1">Сигнализация</li>
+                    <li class="my-1">Подушки безопасности боковые </li>
+                    <li class="my-1">Подушки безопасности передние </li>
+                    <li class="my-1">Иммобилайзер </li>
+                    <li class="my-1">Антипробуксовочная система </li>
+                    <li class="my-1">ESP (система поддержания динамической стабильности) </li>
+                    <li class="my-1">ABS (антиблокировочная система)</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <span class="light_red font-size-20 pl-3">Интерьер,комфорт и мультимедиа</span>
+                <br>
+                <ul class="cons_lists">
+                    <li class="my-1">Круиз-контроль </li>
+                    <li class="my-1">Управление мультимедиа с руля</li>
+                    <li class="my-1">Электростеклоподъемники передние/задние</li>
+                    <li class="my-1">Электрорегулировка сидений</li>
+                    <li class="my-1">Bluetooth </li>
+                    <li class="my-1">USB/CD/MP3 проигрыватель</li>
+                    <li class="my-1">AUX/iPod</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <span class="light_red font-size-20 pl-3">Климат и обогрев</span>
+                <br>
+                <ul class="cons_lists">
+                    <li class="my-1">Кондиционер</li>
+                    <li class="my-1">Обогрев лобового стекла</li>
+                    <li class="my-1">Обогрев зеркал</li>
+                    <li class="my-1">Климат-контроль</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Photo" class="tabcontent font-size-19 my-5">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    </div>
+
+</div>
+
+<!--//////////////-->
+
+{% endblock %}

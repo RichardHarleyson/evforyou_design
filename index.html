@@ -1,17 +1,3 @@
-<!-- <!doctype html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body> -->
-
-<!--      Header_block-->
-
 {% extends 'basic.html' %}
 
 {% block head %}
@@ -65,17 +51,109 @@
               <div class="my-5">
                 <div class="row mb-3 mx-0 px-0">
                     <div class="col"></div>
-                    <div class="col"><img class="img-fluid" src="{% static "img/tesla3black_small.png" %}" style="opacity: 0.7"></div>
-                    <div class="col"><img class="img-fluid" src="{% static "img/tesla3black_small.png" %}" style="opacity: 0.7"></div>
-                    <div class="col"><img class="img-fluid" src="{% static "img/tesla3black_small.png" %}" style="opacity: 0.7"></div>
-                    <div class="col"><img class="img-fluid" src="{% static "img/teslaxred_small.png" %}"></div>
+                    <div class="col testdrive_switch opacity07" onclick="testdrive_switcher(this, '1')"><img class="img-fluid" src="{% static "img/testdrive1_small.png" %}"></div>
+                    <div class="col testdrive_switch opacity07" onclick="testdrive_switcher(this, '2')"><img class="img-fluid" src="{% static "img/testdrive2_small.png" %}"></div>
+                    <div class="col testdrive_switch opacity07" onclick="testdrive_switcher(this, '3')"><img class="img-fluid" src="{% static "img/testdrive3_small.png" %}"></div>
+                    <div class="col testdrive_switch opacity07" onclick="testdrive_switcher(this, '4')"><img class="img-fluid" src="{% static "img/testdrive4_small.png" %}"></div>
                     <div class="col"></div>
                 </div>
+                  
+                  <div class="testdrive_wrapper" data-car_id="1">
                   <div class="row mx-0 px-0">
                     <div class="col-2"></div>
-                      <div class="col-4"><img class="img-fluid" src="{% static "img/teslaxred.png" %}"></div>
+                      <div class="col-4"><img class="img-fluid" src="{% static "img/testdrive1.png" %}"></div>
                       <div class="col-4 text-left">
                         <span class="font_pfespl text-uppercase" style="font-size: 25px;">Tesla Model 3 2018</span>
+                                                    <br>
+                        <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Класс: <span class="light_red">Седан</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Пробег: <span class="light_red">6 тыс. км</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Двигатель: <span class="light_red">Электро (283 л.с. / 211 кВт) </span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Привод: <span class="light_red">Задний</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Разгон до 100км: <span class="light_red">5,8 с.</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Максимальная скорость: <span class="light_red">210 км/ч</span></span>
+                                                    <br>
+                          <button class="test_drive_detail mt-3 font_pfespl">Подробнее</button>
+                      </div>
+                    <div class="col-2"></div>
+                  </div>
+                  <div class="testdrive_veh_test my-4 mx-auto font_pfespl" style="font-size: 19px">
+                         Tesla Model 3 построен на новой платформе, которая в корне отличается от Model S и Model X. Данный автомобиль призван стать первым массовым электромобилем от Tesla Inc. Безопасность является наиболее важной конструктивной особенностью модели 3. Ее металлическая структура представляет собой сочетание алюминия и стали, что гарантирует максимальную прочность. В испытании на деформацию крыши Модель 3 выдержала в четыре раза большую массу, даже с большой стеклянной крышей: эквивалентно весу двух взрослых африканских слонов.
+                  </div>
+                  <div class="my-4">
+                    <button class="goto_catalogue1" onclick="window.location.href = 'instock/1';">Перейти в каталог</button>
+                  </div>
+                </div>
+                  <div class="testdrive_wrapper" data-car_id="2">
+                  <div class="row mx-0 px-0">
+                    <div class="col-2"></div>
+                      <div class="col-4"><img class="img-fluid" src="{% static "img/testdrive2.png" %}"></div>
+                      <div class="col-4 text-left">
+                        <span class="font_pfespl text-uppercase" style="font-size: 25px;">Tesla Model S 2019</span>
+                                                    <br>
+                        <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Класс: <span class="light_red">Лифтбек</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Пробег: <span class="light_red">2 тыс. км</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Двигатель: <span class="light_red">Электро (785 л.с. / 677 кВт) </span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Привод: <span class="light_red">Полный</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Разгон до 100км: <span class="light_red">2,7 с.</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Максимальная скорость: <span class="light_red">250 км/ч</span></span>
+                                                    <br>
+                          <button class="test_drive_detail mt-3 font_pfespl">Подробнее</button>
+                      </div>
+                    <div class="col-2"></div>
+                  </div>
+                  <div class="testdrive_veh_test my-4 mx-auto font_pfespl" style="font-size: 19px">
+Model S спроектирована с нуля, чтобы быть самым безопасным и, в то же время, самым резвым седаном на дороге. C беспрецедентной производительностью двигателей, которая передаётся через уникальную, полностью электрическую трансмиссию Tesla, Model S разгоняется от 0 до 100 км/ч всего за 2,7 секунды. Модель S поставляется со встроенной функцией автопилота, чтобы сделать ваше вождение более безопасным и менее утомительным.
+                  </div>
+                  <div class="my-4">
+                    <button class="goto_catalogue1" onclick="window.location.href = 'instock/1';">Перейти в каталог</button>
+                  </div>
+                </div>
+                  <div class="testdrive_wrapper" data-car_id="3">
+                  <div class="row mx-0 px-0">
+                    <div class="col-2"></div>
+                      <div class="col-4"><img class="img-fluid" src="{% static "img/testdrive3.png" %}"></div>
+                      <div class="col-4 text-left">
+                        <span class="font_pfespl text-uppercase" style="font-size: 25px;">Tesla Model S 90D 2016</span>
+                                                    <br>
+                        <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Класс: <span class="light_red">Лифтбек</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Пробег: <span class="light_red">2 тыс. км</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Двигатель: <span class="light_red">Электро (518 л.с. / 386 кВт) </span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Привод: <span class="light_red">Полный</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Разгон до 100км: <span class="light_red">4,4 с.</span></span>
+                                                    <br>
+                          <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Максимальная скорость: <span class="light_red">250 км/ч</span></span>
+                                                    <br>
+                          <button class="test_drive_detail mt-3 font_pfespl">Подробнее</button>
+                      </div>
+                    <div class="col-2"></div>
+                  </div>
+                  <div class="testdrive_veh_test my-4 mx-auto font_pfespl" style="font-size: 19px">
+Model S спроектирована с нуля, чтобы быть самым безопасным и, в то же время, самым резвым седаном на дороге. C беспрецедентной производительностью двигателей, которая передаётся через уникальную, полностью электрическую трансмиссию Tesla, Model S разгоняется от 0 до 100 км/ч всего за 2,7 секунды. Модель S поставляется со встроенной функцией автопилота, чтобы сделать ваше вождение более безопасным и менее утомительным.
+                  </div>
+                  <div class="my-4">
+                    <button class="goto_catalogue1" onclick="window.location.href = 'instock/1';">Перейти в каталог</button>
+                  </div>
+                </div>
+                  <div class="testdrive_wrapper" data-car_id="4">
+                  <div class="row mx-0 px-0">
+                    <div class="col-2"></div>
+                      <div class="col-4"><img class="img-fluid" src="{% static "img/testdrive4.png" %}"></div>
+                      <div class="col-4 text-left">
+                        <span class="font_pfespl text-uppercase" style="font-size: 25px;">Tesla Model X 2018</span>
                                                     <br>
                         <span class="font_pfespl" style="font-size: 20px; line-height: 1.4">Класс: <span class="light_red">Внедорожник / Кроссовер</span></span>
                                                     <br>
@@ -98,26 +176,30 @@
                         Напольный монтаж батареи понижает центр тяжести, так что риск опрокидывания в два раза ниже, чем у любого другого автомобиля в этом классе.
                   </div>
                   <div class="my-4">
-                    <button class="goto_catalogue1">Перейти в каталог</button>
+                    <button class="goto_catalogue1" onclick="window.location.href = 'instock/1';">Перейти в каталог</button>
                   </div>
+                </div>
+              
               </div>
           </div>
       </div>
 
 <!--      Cons-->
+
       <div class="cons_block light_grey">
           <div class="cons_block_header mx-auto  text-center">
-               <span class="font_pfespm" style="font-size: 26px;">НАШИ <span class="light_red">ПРЕИМУЩЕСТВА</span></span>
+               <span class="font_pfespm font-size-26">НАШИ <span class="light_red">ПРЕИМУЩЕСТВА</span></span>
           </div>
 
           <div class="cons_block_texts">
-            <div class="row mx-0 px-0">
+<!--              ----->
+                <div class="row mx-0 px-0">
                 <div class="col px-0 mx-0">
                     <div style="">
                     <div style="margin-left: 20%;">
-                        <span class="text-uppercase font_pfespm" style="font-size: 22px;">Мы <span class="light_red">знаем</span> об электромобилях - все!</span>
+                        <span class="text-uppercase font_pfespm font-size-22">Мы <span class="light_red">знаем</span> об электромобилях - все!</span>
                         <br>
-                            <ul>
+                            <ul class="cons_lists">
                                 <li>
                                     <span class="font_pfespl" style="font-size: 19px;">Отслеживаем все новости по данной тематике.</span>
                                 </li>
@@ -136,14 +218,160 @@
                     <img class="test_img_polygon img-fluid" style="" src="{% static "img/cons_block3.jpg" %}">
                 </div>
             </div>
+<!--              ----->
+                <div class="row mx-0 px-0">
+                <div class="col px-0 mx-0">
+                    <div style="">
+                    <div style="margin-left: 20%;">
+                        <span class="text-uppercase font_pfespm font-size-22">Нами накоплен огромный <span class="light_red">опыт!</span></span>
+                        <br>
+                            <ul class="cons_lists">
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">Мы сами эксплуатируем электромобили каждый день на протяжении уже более четырех лет. За это время нами накоплен бесценный опыт эксплуатации и обслуживания электромобилей в условиях Украины.
+</span>
+                                </li>
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">Мы поможем вам на всех стадиях: выбор автомобиля, покупка, доставка, постановка на учет, "зарядка электромобиля", ежедневная эксплуатация и обслуживание. </span>
+                                </li>
+                            </ul>
+                    </div>
+                    </div>
+                    <div class="cons_fancy_line"></div>
+                </div>
+                <div class="col cons_block_img1">
+                    <img class="test_img_polygon img-fluid" style="" src="{% static "img/cons2.jpg" %}">
+                </div>
+            </div>
+<!--              ----->
+                <div class="row mx-0 px-0">
+                <div class="col px-0 mx-0">
+                    <div style="">
+                    <div style="margin-left: 20%;">
+                        <span class="text-uppercase font_pfespm font-size-22">мы <span class="light_red">лучший</span> оператор рынка электромобилей </span>
+                        <br>
+                            <ul class="cons_lists">
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">
+Наша компания поможет Вам с покупкой, доставкой, уплатой таможенных платежей и постановкой на учет. 
+
+</span>
+                                </li>
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">
+Наши специалисты проконсультируют и помогут подобрать модель и модификацию для ваших целей и нужд. 
+
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">
+Мы осуществляем продажу электромобилей в наличии и под заказ. Работаем как с новыми машинами, так и с б/у.
+                                    </span>
+                                </li>
+                            </ul>
+                    </div>
+                    </div>
+                    <div class="cons_fancy_line"></div>
+                </div>
+                <div class="col cons_block_img1">
+                    <img class="test_img_polygon img-fluid" style="" src="{% static "img/cons3.jpg" %}">
+                </div>
+            </div>
+<!--              ----->
+                <div class="row mx-0 px-0">
+                <div class="col px-0 mx-0">
+                    <div style="">
+                    <div style="margin-left: 20%;">
+                        <span class="text-uppercase font_pfespm font-size-22">Подбор и доставка <span class="light_red">запчастей</span> из США</span>
+                        <br>
+                            <ul class="cons_lists">
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">
+Техническое оснащение машин в Америке обойдется намного дешевле, нежели в Украине, тогда как многие запчасти к штатовским автомобилям делаются гораздо более качественными и имеют гораздо больший срок эксплуатации.
+
+</span>
+                                </li>
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">
+Доставляем автозапчасти из США большинства известных брендов
+
+                                    </span>
+                                </li>
+                            </ul>
+                    </div>
+                    </div>
+                    <div class="cons_fancy_line"></div>
+                </div>
+                <div class="col cons_block_img1">
+                    <img class="test_img_polygon img-fluid" style="" src="{% static "img/cons4.jpg" %}">
+                </div>
+            </div>
+<!--              ----->
+                <div class="row mx-0 px-0">
+                <div class="col px-0 mx-0">
+                    <div style="">
+                    <div style="margin-left: 20%;">
+                        <span class="text-uppercase font_pfespm font-size-22">Мы предлагаем <span class="light_red">Лучшее</span> за теже деньги!</span>
+                        <br>
+                            <ul class="cons_lists">
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">
+Популярность электромобилей из Америки ежегодно растет. Украинские водители могут без дополнительных трат найти и привезти хороший лот прямиком со страхового аукциона. 
+</span>
+                                </li>
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">
+До конца 2022 года ввезти автомобили с электромоторами можно без уплаты НДС и пошлин. Так что у покупателей есть уникальная возможность экономить семейный бюджет и приобрести достойную машину на каждый день.
+                                    </span>
+                                </li>
+                            </ul>
+                    </div>
+                    </div>
+                    <div class="cons_fancy_line"></div>
+                </div>
+                <div class="col cons_block_img1">
+                    <img class="test_img_polygon img-fluid" style="" src="{% static "img/cons5.jpg" %}">
+                </div>
+            </div>
+<!--              ----->
+                <div class="row mx-0 px-0">
+                <div class="col px-0 mx-0">
+                    <div style="">
+                    <div style="margin-left: 20%;">
+                        <span class="text-uppercase font_pfespm font-size-22">электромобили имеют <span class="light_red">топ-комплектацию</span></span>
+                        <br>
+                            <ul class="cons_lists">
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">
+Впечатляющая комплектация таких автомобилей часто выступает решающим фактором при покупке, ведь производители всегда стараются максимально укомплектовать свою продукцию.
+
+</span>
+                                </li>
+                                <li>
+                                    <span class="font_pfespl" style="font-size: 19px;">
+Авто в большинстве случаев будет наделено гидроусилителем руля, кондиционером, сигнализацией, полным электропакетом, кожаным салоном и литыми дисками.
+
+                                    </span>
+                                </li>
+                            </ul>
+                    </div>
+                    </div>
+                    <div class="cons_fancy_line"></div>
+                </div>
+                <div class="col cons_block_img1">
+                    <img class="test_img_polygon img-fluid" style="" src="{% static "img/cons6.jpg" %}">
+                </div>
+            </div>
+<!--              ----->
           </div>
       </div>
 
 <!--      Newcommers-->
+
       <div class="newcommers_block light_grey" id="newcommers_block">
         <div class="newcommers_header text-center mx-auto">
-            <span class="font_pfespm text-uppercase" style="font-size: 26px;">актуальные <span class="light_red">поступления</span></span>
+            <span class="font_pfespm text-uppercase main_heading_font">актуальные <span class="light_red">поступления</span></span>
         </div>
+<!--          ----->
           <div class="row my-5 mx-0 px-0">
             <div class="col-2"></div>
               <div class="col-4"><img class="img-fluid" src="{% static "img/incommer_1.jpg" %}"></div>
@@ -158,12 +386,74 @@
               </div>
             <div class="col-2"></div>
           </div>
+<!--          ----->
+           <div class="row my-5 mx-0 px-0">
+            <div class="col-2"></div>
+              <div class="col-4"><img class="img-fluid" src="{% static "img/incommer_2.png" %}"></div>
+              <div class="col-4">
+                  <div class="incommer_text_head text-uppercase font_pfespl" style="font-size: 20px;">Tesla Model S 90D 2016</div>
+                  <p class="font_pfespl pt-4" style="font-size: 19px;">
+Продажа от собственника. Стоит на укр. регистрации. Пробег 62 тыс. км, полный привод, цвет синий металлик, Без ПНЕВМО. Зимний пакет( подогрев лобового, руля и всех сидений). Авто без ДТП.
+                  </p>
+                  <p class="font_pfespl" style="font-size: 19px;">Цена: <span class="light_red">46 000 $</span></p>
+                  <button class="incomming_details font_pfespl">Подробнее</button>
+              </div>
+            <div class="col-2"></div>
+          </div>
+          
+<!--          ----->
+          <div class="row my-5 mx-0 px-0">
+            <div class="col-2"></div>
+              <div class="col-4"><img class="img-fluid" src="{% static "img/incommer_3.png" %}"></div>
+              <div class="col-4">
+                  <div class="incommer_text_head text-uppercase font_pfespl" style="font-size: 20px;">Tesla Model S 2019</div>
+                  <p class="font_pfespl pt-4" style="font-size: 19px;">
+Пригнан из США. Первая регистрация! 
+Пробег 2,5 тыс. км, полный привод, цвет белый металлик, двигатель (785 л.с. / 577 кВт), есть все, машина в идеальном состоянии!
+                  </p>
+                  <p class="font_pfespl" style="font-size: 19px;">Цена: <span class="light_red">97 000 $</span></p>
+                  <button class="incomming_details font_pfespl">Подробнее</button>
+              </div>
+            <div class="col-2"></div>
+          </div>
+<!--          ----->
+            <div class="row my-5 mx-0 px-0">
+            <div class="col-2"></div>
+              <div class="col-4"><img class="img-fluid" src="{% static "img/incommer_4.png" %}"></div>
+              <div class="col-4">
+                  <div class="incommer_text_head text-uppercase font_pfespl" style="font-size: 20px;">Tesla Model 3 2018</div>
+                  <p class="font_pfespl pt-4" style="font-size: 19px;">
+Пригнан из США. Первая регистрация! 
+Пробег 6 тыс. км, задний привод, цвет синий металлик, десятая прошивка, резина 2 комплекта, есть все, отличное состояние! 
+                  </p>
+                  <p class="font_pfespl" style="font-size: 19px;">Цена: <span class="light_red">38 000 $</span></p>
+                  <button class="incomming_details font_pfespl">Подробнее</button>
+              </div>
+            <div class="col-2"></div>
+          </div>
+<!--          ----->
+          <div class="row my-5 mx-0 px-0">
+            <div class="col-2"></div>
+              <div class="col-4"><img class="img-fluid" src="{% static "img/incommer_5.png" %}"></div>
+              <div class="col-4">
+                  <div class="incommer_text_head text-uppercase font_pfespl" style="font-size: 20px;">TESLA MODEL 3.18 LONG RANGE. RWD.</div>
+                  <p class="font_pfespl pt-4" style="font-size: 19px;">
+Пригнан из США. Первая регистрация! 
+Пробег 21 тыс. км, задний привод, цвет красный металлик, есть все, отличное состояние! Гаражное  хранение, первый  владелец
+                  </p>
+                  <p class="font_pfespl" style="font-size: 19px;">Цена: <span class="light_red">35 000 $</span></p>
+                  <button class="incomming_details font_pfespl">Подробнее</button>
+              </div>
+            <div class="col-2"></div>
+          </div>
+<!--          ----->
       </div>
 
 <!--      Service-->
+
       <div class="service_block light_grey">
         <div class="service_block_header text-center mx-auto">
-            <span class="text-uppercase font_pfespm" style="font-size: 26px;"><span class="light_red">сервисное</span> обслуживание</span>
+            <span class="text-uppercase font_pfespm main_heading_font"><span class="light_red">сервисное</span> обслуживание</span>
         </div>
         <div class="row mx-0 px-0 my-4">
             <div class="col-1"></div>
@@ -190,6 +480,7 @@
       </div>
 
 <!--    Contacts form block-->
+
     <div class="contacts_form_block">
           <div class="contacts_form_header text-center mx-auto">
               <span class="text-uppercase font_pfespm" style="font-size: 26px;">Остались <span class="light_red">вопросы?</span></span>
@@ -249,6 +540,7 @@
       </div>
 
 <!--      map-->
+
       <div class="map_block">
         <img class="img-fluid" style="margin-top: -60px;" src="{% static "img/map.png" %}">
       </div>
@@ -276,7 +568,7 @@
                 </p>
             </div>
           </div>
-        <span class="font_pfespm text-white" style="font-size: 12px; position: relative; top: 90%; left: 60%;">© 2020 EVforyou. All Rights Reserved. Developed by </span>
+        <span class="font_pfespm text-white copyright_footer">© 2020 EVforyou. All Rights Reserved.</span>
       </div>
 
 {% endblock %}

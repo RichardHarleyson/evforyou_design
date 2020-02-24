@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="description" content="Базовый description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{% static "img/favicon.ico" %}" type="image/x-icon">
+    <title>
+        EVFORYOU - Каталог
+    </title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- fonts -->
+      <style>
+        @font-face {
+          font-family: MyriadProRegular;
+          src: url('{% static "fonts/MyriadProRegular.ttf" %}');
+        }
+
+        @font-face {
+          font-family: PFEncoreSansPro-Bold;
+          src: url('{% static "fonts/PFEncoreSansPro-Bold.ttf" %}');
+        }
+
+        @font-face {
+          font-family: PFEncoreSansPro-Light;
+          src: url('{% static "fonts/PFEncoreSansPro-Light.ttf" %}');
+        }
+
+        @font-face {
+          font-family: PFEncoreSansPro-Medium;
+          src: url('{% static "fonts/PFEncoreSansPro-Medium.ttf" %}');
+        }
+
+        @font-face {
+          font-family: PFEncoreSansPro-Thin;
+          src: url('{% static "fonts/PFEncoreSansPro-Thin.ttf" %}');
+        }
+    </style>
+    <link rel="stylesheet" href="{% static "css/style.css"%}" type="text/css"/>
+
+  </head>
+  <body>
+{% load staticfiles %}
+
+<header class="instock_header">
+  <img src="{% static "img/logo_new.png" %}" class="logo_new" alt="">
+  <div class="header_menu">
+    <div class="menu_item">
+      <a href="/" class="fancy_link font_pfespm red_text"><span class="">ГЛАВНАЯ</span></a>
+    </div>
+    <div class="menu_item">
+      <a href="/instock" class="fancy_link font_pfespm"><span class="">НАЛИЧИЕ</span></a>
+    </div>
+    <div class="menu_item">
+      <a href="#contacts_info" class="fancy_link font_pfespm"><span class="">КОНТАКТЫ</span></a>
+    </div>
+  </div>
+</header>
+
+<div class="text-center my-4">
+    <div class="desc_header mx-auto">
+        <span class="text-uppercase font_pfespm light_red font-size-34 line_h83">Описание</span>
+        <br>
+        <span class="text-uppercase font_pfespm light_grey line_h83 font-size-24">выбранной модели</span>
+    </div>
+</div>
+
+{% block content %}
+      
+      <div class="container my-5"><h1 class="light_red font_pfespm text-uppercase text-center">Авто не найдено</h1></div>
+
+  {% endblock %}
+
+<div class="text-center my-4">
+    <div class="catalog_header mx-auto">
+        <span class="text-uppercase font_pfespm light_red font-size-34 line_h83">Каталог</span>
+        <br>
+        <span class="text-uppercase font_pfespm light_grey line_h83 font-size-24">доступных Электромобилей</span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 text-center font_pfespl">
+            <div class="text-center font_pfespm light_red font-size-22 my-3">38.000$</div>
+            <a href="2">
+                <img class="mx-auto" src="{% static "img/small_car1.png" %}">
+            </a>
+            <div class="text-center light_grey font-size-20 my-3 text-uppercase">
+                <span class="line_h81">Tesla Model 3</span>
+                <br>
+                <span class="line_h81">Long Range 2018</span>
+            </div>
+            <div class="my-3 text-left font-size-18 mx-auto" style="width: 240px">
+                <span class="d-block line-h81">Тип куза:<span class="light_red">Седан</span></span>
+                <span class="d-block line-h81">КПП: <span class="light_red">Автомат</span></span>
+                <span class="d-block line-h81">Разгон до 100 км <span class="light_red">5,8 сек</span></span>
+                <span class="d-block line-h81">Макс. скорость:<span class="light_red">210 км/ч</span></span>
+                <span class="d-block line-h81">Мощность: <span class="light_red">283 л.с./211 кВт</span></span>
+                <span class="d-block line-h81">Запас хода: <span class="light_red">350 км</span></span>
+                <span class="d-block line-h81">Пробег: <span class="light_red">9 тыс.км</span></span>
+            </div>
+            <a href="2" type="button" class="test_drive_detail"><span class="text-white text-none">Подробнее</span></a>
+        </div>
+        <div class="col-4 text-center font_pfespl">
+            <div class="text-center font_pfespm light_red font-size-22 my-3">35.000$</div>
+            <a href="3">
+                <img class="mx-auto" src="{% static "img/tesla3longrange2018blue.png" %}">
+            </a>
+            <div class="text-center  light_grey font-size-20 my-3 text-uppercase">
+                <span class="line_h81">Tesla Model 3</span>
+                <br>
+                <span class="line_h81">Long Range 2018</span>
+            </div>
+            <div class="my-3 text-left font-size-18  mx-auto" style="width: 240px">
+                <span class="d-block line-h81">Тип куза:<span class="light_red">Седан</span></span>
+                <span class="d-block line-h81">КПП: <span class="light_red">Автомат</span></span>
+                <span class="d-block line-h81">Разгон до 100 км <span class="light_red">5,8 сек</span></span>
+                <span class="d-block line-h81">Макс. скорость:<span class="light_red">210 км/ч</span></span>
+                <span class="d-block line-h81">Мощность: <span class="light_red">283 л.с./211 кВт</span></span>
+                <span class="d-block line-h81">Запас хода: <span class="light_red">350 км</span></span>
+                <span class="d-block line-h81">Пробег: <span class="light_red">9 тыс.км</span></span>
+            </div>
+            <a href="3" type="button" class="test_drive_detail"><span class="text-white text-none">Подробнее</span></a>
+        </div>
+        <div class="col-4 text-center font_pfespl">
+            <div class="text-center light_red font-size-22 my-3 font_pfespm">87.000$</div>
+            <a href="1">
+                <img class="mx-auto" src="{% static "img/teslax2018red.png" %}">
+            </a>
+            <div class="text-center light_grey font-size-20 my-3 text-uppercase">
+                <span class="line_h81">Tesla Model X</span>
+                <br>
+                <span class="line_h81">2018</span>
+            </div>
+            <div class="my-3 text-left font-size-18 mx-auto" style="width: 240px">
+                <span class="d-block line-h81">Тип куза:<span class="light_red">Седан</span></span>
+                <span class="d-block line-h81">КПП: <span class="light_red">Автомат</span></span>
+                <span class="d-block line-h81">Разгон до 100 км <span class="light_red">5,3 сек</span></span>
+                <span class="d-block line-h81">Макс. скорость:<span class="light_red">210 км/ч</span></span>
+                <span class="d-block line-h81">Мощность: <span class="light_red">283 л.с./211 кВт</span></span>
+                <span class="d-block line-h81">Запас хода: <span class="light_red">350 км</span></span>
+                <span class="d-block line-h81">Пробег: <span class="light_red">24 тыс.км</span></span>
+            </div>
+            <a href="1" type="button" class="test_drive_detail"><span class="text-white text-none">Подробнее</span></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 text-center font_pfespl">
+            <div class="text-center light_red font-size-22 my-3 font_pfespm">46.000$</div>
+            <a href="5">
+            <img class="mx-auto" src="{% static "img/teslas2019blue.png" %}">
+            </a>
+            <div class="text-center light_grey font-size-20 my-3 text-uppercase">
+                <span class="line_h81">Tesla Model S</span>
+                <br>
+                <span class="line_h81">P100D 2019</span>
+            </div>
+            <div class="my-3 text-left font-size-18 mx-auto" style="width: 240px">
+                <span class="d-block line-h81">Тип куза:<span class="light_red">Лифтбек</span></span>
+                <span class="d-block line-h81">КПП: <span class="light_red">Автомат</span></span>
+                <span class="d-block line-h81">Разгон до 100 км <span class="light_red">4,4 сек</span></span>
+                <span class="d-block line-h81">Макс. скорость:<span class="light_red">250 км/ч</span></span>
+                <span class="d-block line-h81">Мощность: <span class="light_red">518 л.с./386 кВт</span></span>
+                <span class="d-block line-h81">Запас хода: <span class="light_red">557 км</span></span>
+                <span class="d-block line-h81">Пробег: <span class="light_red">6 тыс.км</span></span>
+            </div>
+            <a href="5" type="button" class="test_drive_detail"><span class="text-white text-none">Подробнее</span></a>
+        </div>
+        <div class="col-4 text-center font_pfespl">
+            <div class="text-center light_red font-size-22 my-3 font_pfespm">46.000$</div>
+            <a href="6">
+            <img class="mx-auto" src="{% static "img/teslas2019dblue.png" %}">
+            </a>
+            <div class="text-center light_grey font-size-20 my-3 text-uppercase">
+                <span class="line_h81">Tesla Model S</span>
+                <br>
+                <span class="line_h81">P100D 2019</span>
+            </div>
+            <div class="my-3 text-left font-size-18 mx-auto" style="width: 240px">
+                <span class="d-block line-h81">Тип куза:<span class="light_red">Лифтбек</span></span>
+                <span class="d-block line-h81">КПП: <span class="light_red">Автомат</span></span>
+                <span class="d-block line-h81">Разгон до 100 км <span class="light_red">4,4 сек</span></span>
+                <span class="d-block line-h81">Макс. скорость:<span class="light_red">250 км/ч</span></span>
+                <span class="d-block line-h81">Мощность: <span class="light_red">518 л.с./386 кВт</span></span>
+                <span class="d-block line-h81">Запас хода: <span class="light_red">557 км</span></span>
+                <span class="d-block line-h81">Пробег: <span class="light_red">6 тыс.км</span></span>
+            </div>
+            <a href="6" type="button" class="test_drive_detail"><span class="text-white text-none">Подробнее</span></a>
+        </div>
+        <div class="col-4 text-center font_pfespl">
+            <div class="text-center light_red font-size-22 my-3 font_pfespm">97.000$</div>
+            <a href="4">
+            <img class="mx-auto" src="{% static "img/teslax2018white.png" %}">
+            </a>
+            <div class="text-center light_grey font-size-20 my-3 text-uppercase">
+                <span class="line_h81">Tesla Model S</span>
+                <br>
+                <span class="line_h81">2018</span>
+            </div>
+            <div class="my-3 text-left font-size-18 mx-auto" style="width: 240px">
+                <span class="d-block line-h81">Тип куза:<span class="light_red">Лифтбек</span></span>
+                <span class="d-block line-h81">КПП: <span class="light_red">Автомат</span></span>
+                <span class="d-block line-h81">Разгон до 100 км <span class="light_red">2,7 сек</span></span>
+                <span class="d-block line-h81">Макс. скорость:<span class="light_red">265 км/ч</span></span>
+                <span class="d-block line-h81">Мощность: <span class="light_red">585 л.с./585 кВт</span></span>
+                <span class="d-block line-h81">Запас хода: <span class="light_red">615 км</span></span>
+                <span class="d-block line-h81">Пробег: <span class="light_red">2 тыс.км</span></span>
+            </div>
+            <a href="4" type="button" class="test_drive_detail"><span class="text-white text-none">Подробнее</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="instock_footer mt-5">
+    <div class="position-absolute" style="top:10%; left: 10%; width: 300px;">
+        <div class="font-size-18 font_pfespl text-white my-3 row">
+            <div class="col-2 text-center">
+                <img class="mx-auto" src="{% static "img/phone_icon.png"%}" alt="phone_icon">
+            </div>
+            <div class="col-10">
+                <span>+38 (067) 821 77 77</span>
+            </div>
+        </div>
+        <div class="font-size-18 font_pfespl text-white my-3 row">
+            <div class="col-2 text-center">
+                <img class="mx-auto" src="{% static "img/mail_icon.png"%}" alt="phone_icon">
+            </div>
+            <div class="col-10">
+                <span>evforyou.com@gmail.com</span>
+            </div>
+        </div>
+        <div class="font-size-18 font_pfespl text-white my-3 row">
+            <div class="col-2 text-center" style="line-height: 54px">
+                <img class="d-inline mx-auto" src="{% static "img/map_icon.png"%}" alt="phone_icon">
+            </div>
+            <div class="col-10">
+                <span class="line-h81">Запорожское ш., 59, Днипро, Днепропетровская область </span>
+            </div>
+        </div>
+    </div>
+    <span class="font_pfespm text-white copyright_footer">© 2020 EVforyou. All Rights Reserved.</span>
+</div>
+
+  <!-- Bootstrap and JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Custom Scripts -->
+  <script src="{% static "script/global.js"%}"></script>
+  <!-- slick lib -->
+  <link rel="stylesheet" type="text/css" href="{% static "vendor/slick-1.8.1/slick/slick.css" %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static "vendor/slick-1.8.1/slick/slick-theme.css" %}"/>
+  <script type="text/javascript" src="{% static "vendor/slick-1.8.1/slick/slick.min.js" %}"></script>
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </body>
+</html>
