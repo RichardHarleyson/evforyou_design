@@ -1,0 +1,101 @@
+{% extends 'basic.html' %}
+
+{% block head %}
+<title>
+  {% block title %}
+    EVFORYOU - Контакты
+  {% endblock %}
+</title>
+<meta name="description" content="Evforyou — электромобили премиум класса, запчасти для электрокаров, автомобильные аукционы США">
+{% endblock %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<header class="contacts_header">
+  <img src="{% static "img/logo_new.png" %}" class="logo_new" alt="">
+  <div class="header_menu">
+    <div class="menu_item">
+      <a href="/" class="fancy_link font_pfespm red_text"><span class="">ГЛАВНАЯ</span></a>
+    </div>
+    <div class="menu_item">
+      <a href="/instock/1" class="fancy_link font_pfespm"><span class="">НАЛИЧИЕ</span></a>
+    </div>
+    <div class="menu_item">
+      <a href="/contacts" class="fancy_link font_pfespm"><span class="">КОНТАКТЫ</span></a>
+    </div>
+  </div>
+</header>
+
+<div class="text-center my-4 light_grey">
+    <div class="desc_header mx-auto">
+        <span class="text-uppercase font_pfespm font-size-34 line_h83">Наши <span class="light_red">контакты</span></span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="font-size-26 font_pfespl my-3 row">
+            <div class="col-2 text-center">
+                <img class="mx-auto" src="{% static "img/phone_icon.png"%}" alt="phone_icon">
+            </div>
+            <div class="col-10">
+                <span>+38 (067) 821 77 77</span>
+            </div>
+        </div>
+        <div class="font-size-26 font_pfespl my-3 row">
+            <div class="col-2 text-center">
+                <img class="mx-auto" src="{% static "img/mail_icon.png"%}" alt="phone_icon">
+            </div>
+            <div class="col-10">
+                <span>evforyou.com@gmail.com</span>
+            </div>
+        </div>
+        <div class="font-size-26 font_pfespl my-3 row">
+            <div class="col-2 text-center" style="line-height: 54px">
+                <img class="d-inline mx-auto" src="{% static "img/map_icon.png"%}" alt="phone_icon">
+            </div>
+            <div class="col-10">
+                <span class="line-h81">Запорожское ш., 59, Днипро, Днепропетровская область </span>
+            </div>
+        </div>
+        </div>
+        <div class="col-6">
+            <img class='img-fluid' src="{% static "img/contacts_car.png" %}">
+        </div>
+    </div>
+</div>
+
+<div class="map_block">
+<img class="img-fluid" style="margin-top: -60px;" src="{% static "img/map.png" %}">
+</div>
+
+<div class="instock_footer mt-5">
+          <div class="footer_card">
+            <div class="pt-3 px-4 font_pfespl light_grey">
+                <img class="img-fluid" src="{% static "img/logo_new_dark.png" %}">
+                <p class="pt-3 my-0" style="font-size: 14px;">
+                    “Мы осуществляем продажу электромобилей в наличии и под заказ как новых, так и бывших в употреблении.”
+                </p>
+                <p class="my-0">
+<!--                    <i class="fas fa-calendar-alt"></i>-->
+                    <i class="fas fa-calendar-alt d-inline pr-2 light_red" style="font-size: 40px"></i>
+                    <span style="font-size: 16px; text-align: middle">Режим работы</span>
+                </p>
+                <p class="my-0">
+                    <span style="font-size: 19px; line-height: 1;"><span class="light_red">пн-пт </span> 8:00 - 18:00</span>
+                    <br>
+                    <span style="font-size: 19px; line-height: 1;"><span class="light_red">сб-вс </span> 9:00 - 16:00</span>
+                </p>
+                <p class="my-0">
+                    <span class="light_red" style="font-size: 15px">без перерыва и выходных</span>
+                </p>
+            </div>
+          </div>
+    <span class="font_pfespm text-white copyright_footer">© 2020 EVforyou. All Rights Reserved.</span>
+</div>
+
+
+{% endblock %}
